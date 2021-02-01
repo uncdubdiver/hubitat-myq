@@ -1,5 +1,5 @@
 # hubitat-myq
-Device Type Handler for the MyQ garage door opener integration for Hubitat Elevation
+Driver Code for the MyQ garage door opener integration for Hubitat Elevation
 
 ### Pre-requisites
 Must have a Hubitat Elevation hub installed  
@@ -10,13 +10,13 @@ Must have a MyQ account setup (https://myqchamberlain.com)
 Start by logging into to your Hubitat local hub
 
 ### 2 AVAILABLE OPTIONS
-- Device Type Handler: recognizes as a DOOR
+- Driver Code: recognizes as a DOOR
 
 ### 1. Drivers Code
 1. Navigation, click on _Drivers Code_.
 2. Click on [+ New Driver].
 3. Select the _From Code_ tab.
-  - **DOOR DTH**  - drivercode-door.groovy
+  - **DOOR CAPABILITY**  - drivercode-myq.groovy
 4. Copy and paste in the code from the selected file.
 5. Click [Save].
 
@@ -44,11 +44,13 @@ Start by logging into to your Hubitat local hub
 2. Click on _MyQ Garage Door Opener_.
 3. Click [Refresh] to get the updated door state.
 
-### DEBUGGING
-If you're having problems and need to enable debugging, simply open the Hubitat GUI and edit the Driver code on line ~::172 by changing the line as follows:  
-FROM: set_DEBUG("off")  
-TO: set_DEBUG("on")  
-Then click [Save].  To view the debugging output (aka logs), go to the Logs page within the Hubitat GUI for the device.
+### DEBUGGING/TROUBLESHOOTING
+If you edit the driver code in your local Hubitat environment, search for the "refresh()" function and enable debugging by setting the following:  
+```groovy
+set_DEBUG("off")
+...to...
+set_DEBUG("on")
+```
 
 ### DISCLOSURE
 I am not a Hubitat or a MyQ Chamberlain developer, this driver code is no way tied to Hubitat or MyQ companies.  I personally had a need for the MyQ garage door opener in my local Hubitat hub, so I created one myself.  It works well for me and this isn't for sale, so feel free to use it, tweak it, whatever you want!

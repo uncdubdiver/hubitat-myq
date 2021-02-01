@@ -247,7 +247,10 @@ def refresh() {
 		return false;
 	}
 	
-    runIn(120, refresh);
+	unschedule()
+	// Set it to run once a minute (continuous polling)
+	if(get_DEBUG() == "on") { log.debug "[refresh()] ---- Polling/Refresh every 2 minutes" }
+	runIn(120, refresh)
 }
 
 def checkLoggedIn() {
@@ -315,14 +318,14 @@ def installed() {
 	if(get_DEBUG() == "on") { log.trace "installed()..." }
 	initialize()
     
-    runIn(120, refresh)
+    // runIn(120, refresh)
 }
 
 def updated() {
 	if(get_DEBUG() == "on") { log.trace "updated()..." }
 	initialize()
     
-    runIn(120, refresh)
+    // runIn(120, refresh)
     //runEvery5Minutes(refresh)
 }
 
