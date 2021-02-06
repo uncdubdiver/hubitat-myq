@@ -16,7 +16,8 @@ Start by logging into to your Hubitat local hub
 1. Navigation, click on _Drivers Code_.
 2. Click on [+ New Driver].
 3. Select the _From Code_ tab.
-  - **DOOR CAPABILITY**  - drivercode-myq.groovy
+  - **DOOR CAPABILITY**  - drivercode-myq-door.groovy
+  - **SWITCH CAPABILITY**  - drivercode-myq-switch.groovy
 4. Copy and paste in the code from the selected file.
 5. Click [Save].
 
