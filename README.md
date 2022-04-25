@@ -4,7 +4,7 @@ Driver Code for the MyQ garage door opener integration for Hubitat Elevation
 ### Pre-requisites
 Must have a Hubitat Elevation hub installed  
 _(Originally built for C7, but should work for other hub versions aswell)_  
-Must have a MyQ account setup (https://myqchamberlain.com)
+Must have a MyQ account setup (https://myq.com)
 
 ### To integrate this into Hubitat, you'll follow these steps:
 Start by logging into to your Hubitat local hub
@@ -35,8 +35,8 @@ Start by logging into to your Hubitat local hub
   - Hub mesh enabled: <unchanged>
 4. Then click [Save Device].
 5. Once the page reloads, scroll down to the Preferences row and set the following:
-  - Username aka MyQ Username (email address): <myqchamberlain.com username>
-  - Password aka MyQ Password: <myqchamberlain.com password>
+  - Username aka MyQ Username (email address): <myq.com username>
+  - Password aka MyQ Password: <myq.com password>
   - Device Name aka Name of the device to manage: <the name of the device/door that is labeled in MyQ>
 6. Then click [Save Preferences].
 
