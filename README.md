@@ -1,3 +1,9 @@
+# THIS PLUGIN IS DISCONTINUED DUE TO MYQ/CHAMBERLAIN DROPPING SUPPORT FOR THEIR API
+
+
+
+
+
 # hubitat-myq
 Driver Code for the MyQ garage door opener integration for Hubitat Elevation
 
